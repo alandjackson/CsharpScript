@@ -1,0 +1,40 @@
+CsharpScript 
+
+* Synopsis
+
+  To Demonstrate a scripting interface in windows .net using Mono.
+
+* Overview
+
+  On startup, a command window shows that will execute c# code.
+
+  Try entering "3+1;"
+
+* Application Control
+
+  There is a dialog with a single text box and a single button.
+
+  To show the dialog:
+
+  App.Setup.Show();
+
+  To set the text box:
+
+  App.Setup.Name = "MyName";
+
+  To hit the button
+
+  App.Setup.SayHello();
+
+* Design
+
+  The scripting classes are static managers of the program and windows form.
+
+  They can be found under Scripting/App.cs and Managers/SetupManager.cs
+
+
+* Future Work
+
+  Compiling the Mono Compiler Services from source was giving me a ton
+  of trouble, so I just downloaded the demo from Miguel de Icaza's blog
+  post here: http://tirania.org/blog/archive/2010/Apr-27.html
