@@ -1,5 +1,3 @@
-CsharpScript 
-
 * Synopsis
 
   To Demonstrate a scripting interface in windows .net using Mono.
@@ -15,16 +13,22 @@ CsharpScript
   There is a dialog with a single text box and a single button.
 
   To show the dialog:
-
+  
+  #+BEGIN_EXAMPLE
   App.Setup.Show();
+  #+END_EXAMPLE
 
   To set the text box:
 
+  #+BEGIN_EXAMPLE
   App.Setup.Name = "MyName";
+  #+END_EXAMPLE
 
   To hit the button
 
+  #+BEGIN_EXAMPLE
   App.Setup.SayHello();
+  #+END_EXAMPLE
 
 * Design
 
